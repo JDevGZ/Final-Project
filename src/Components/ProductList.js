@@ -112,7 +112,7 @@ class ProductList extends Component {
       );
     } else {
       productList = (
-        <Grid container spacing={2}>
+        <Grid container spacing={30}>
           {this.state.products.map((product) => (
             <Grid item xs={3} key={product[features[0]]}>
               <List>

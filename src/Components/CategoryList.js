@@ -39,12 +39,12 @@ class CategoryList extends Component {
   render() {
     return (
       <div id="categoryList">
-        <ImageList cols={4}>
+        <ImageList cols={3}>
           {this.state.categories.map((item) => (
             <Link to={`/categories/${item.category}`} key={item.category}>
               <ImageListItem key={item.category}>
                 <img
-                  style={{ width: '100%', height: '300px' }}
+                  style={{ width: '75%', height: '300px' }}
                   src={item.thumbnail}
                   alt={item.category}
                   loading="lazy"
